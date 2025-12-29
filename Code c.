@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main() {
+    char answer;
+    int score = 0;
+
+    printf("🎉 Welcome to the Mini Quiz Game 🎉\n");
+    printf("----------------------------------\n");
+
+    // Question 1
+    printf("\n1. What is the capital of India?\n");
+    printf("a) Mumbai\n");
+    printf("b) New Delhi\n");
+    printf("c) Chennai\n");
+    printf("d) Kolkata\n");
+    printf("Enter your answer (a/b/c/d): ");
+    scanf(" %c", &answer);
+
+    if(answer == 'b' || answer == 'B') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is New Delhi.\n");
+    }
+
+    // Question 2
+    printf("\n2. Which language is used for web development?\n");
+    printf("a) Python\n");
+    printf("b) HTML\n");
+    printf("c) Java\n");
+    printf("d) All of the above\n");
+    printf("Enter your answer (a/b/c/d): ");
+    scanf(" %c", &answer);
+
+    if(answer == 'd' || answer == 'D') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is All of the above.\n");
+    }
+
+    // Question 3
+    printf("\n3. Who is known as the Father of Computers?\n");
+    printf("a) Alan Turing\n");
+    printf("b) Charles Babbage\n");
+    printf("c) Bill Gates\n");
+    printf("d) Steve Jobs\n");
+    printf("Enter your answer (a/b/c/d): ");
+    scanf(" %c", &answer);
+
+    if(answer == 'b' || answer == 'B') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is Charles Babbage.\n");
+    }
+
+    // Final Score
+    printf("\n----------------------------------\n");
+    printf("Quiz Completed!\n");
+    printf("Your Score: %d / 3\n", score);
+
+    if(score == 3)
+        printf("Excellent!\n");
+    else if(score == 2)
+        printf("Good Job!\n");
+    else
+        printf("Keep Practicing!\n");
+
+    return 0;
+}
